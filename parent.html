@@ -1,0 +1,36 @@
+
+<!-- https://www.youtube.com/watch?v=7kW6DByQPkw -->
+
+<body>
+    <h2 id="title">Title</h2>
+    <ul id="myList">
+        <li>apples</li>
+        <li>bananas</li>
+        <li>pears</li>
+    </ul>
+</body>
+
+<Script>
+    const parentList = document.getElementById('myList');
+    const listChildren = parentList.children;
+    // console.log(listChildren);
+    // console.log(listChildren[0]);
+
+    //const bananas = listChildren.item(1);
+    // const bananas = listChildren[1];
+    // console.log(bananas);
+
+    for (let i = 0; i <listChildren.length; i++) {
+        console.log(listChildren[i])
+    }
+
+    const orangesItem = document.createElement('li');
+    orangesItem.textContent = 'oranges'
+
+    parentList.appendChild(orangesItem);
+
+    console.log(listChildren);
+</Script>
+
+
+
